@@ -1,0 +1,37 @@
+{
+    "MAIN":{
+        "directory": "./iMe_App"
+    },
+
+    "COPY":{
+        "fonts":{
+            "from": "",
+            "to": ""
+        }
+    },
+
+    "CHANGE":{
+        "package_name":{
+            "from": "renameManifestPackage: null",
+            "to":   "renameManifestPackage: org.letegram.messenger",
+            "in":   "apktool.yml"
+        },
+        "app_name":{
+            "from": "iMe Direct",
+            "to":   "Telegram",
+            "in":   "AndroidManifest.xml"
+        }
+    },
+
+    "DELETE":{
+        "armv7":{
+            "dir": "lib/armeabi-v7a"
+        },
+        "x86":{
+            "dir": "lib/x86"
+        },
+        "x86_64":{
+            "dir": "lib/x86_64"
+        }
+    }
+}
